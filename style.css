@@ -13,22 +13,48 @@ header, footer {
 }
 
 header {
-    padding: 1% 15%;
+    padding: 1% 10%;
     row-gap: 150px;
     padding-bottom: 10%;
 }
 
-.Introduction {
-    width: 45%;
-}
-
-.Introduction > div {
-    margin-bottom: 10px;
-}
-
-.menu {
+.header_class {
     display: flex;
-    justify-content: space-between;
+}
+
+.header_links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 50px;
+}
+
+.header_links a {
+    color: #F9FAF8;
+    font-size:  1.5em;
+    text-decoration: none;
+}
+
+
+.header_class img {
+    height: 50px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.introduction {
+    width: 45%;
+    padding: 20px;
+}
+
+.cover_art img {
+    width: 100%;
+    height: auto;
+    flex: 1;
 }
 
 .menu_links {
@@ -36,108 +62,80 @@ header {
     gap: 10px;
 }
 
-.header_content {
-    display: flex;
-    gap: 20px;
-}
-
-.header_content .image_area {
-    width: 50%;
-    height: auto;
-    background:  rgb(109, 109, 109);
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero_main_text {
-    font-size: 48px;
-    font-weight: bold;
-}
-
-.hero_secondary_text {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
-.hero_logo_text {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.section_1 {
+.characters {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30rem;
+    text-align: center;
     padding: 20px;
-    gap: 20px;
+    row-gap: 20px;
 }
 
-.section_1_images {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20vw;
-    width: 50vw;
-}
-
-.section_1_images > div {
+.team_demon_slayer {
     display: flex;
     flex-direction: column;
-    margin: 0 10px;
 }
 
-.section_1_images img {
-    width: 100%;
+.team_title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.members img {
     height: 10em;
-    border: 2px solid blue;
-    border-radius: 8px;
+    width: 10em;
 }
 
-.section_2 {
-    height: 30rem;
+.Quote {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     background-color: #E5E7EB;
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
+    text-align: center;
 }
 
-.section_2 > div {
-    padding: 0 300px;
-}
-
-.section_2 .quoted {
+.quoted {
     font-size: 24px;
     font-weight: bold;
     font-style: normal;
+    width: 80%;
+    margin-left: 50%;
+    word-wrap: break-word;
 }
 
-.section_2 > p {
-    padding: 10%;
-}
-
-.section_3 {
-    height: 5rem;
+.last_note {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5em 20em;
+    margin: 5em 10em;
     background-color: #3882f6;
     border-radius: 8px;
     color: #F9FAF8;
-    column-gap: 5em;
-    padding: 2em;
+    column-gap: 2em;
+    padding: 1em;
+    flex-wrap: wrap;
 }
 
-.section_3_content {
+.last_note_content {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .main_text {
@@ -145,7 +143,7 @@ header {
     font-weight: bold;
 }
 
-.section_3 > button {
+.last_note > button {
     border: 2px solid white;
 }
 
@@ -165,10 +163,4 @@ button {
     width: 8em;
     border-radius: 8px;
     text-align: center;
-}
-
-.information {
-    font-size: 36px;
-    font-weight: bold;
-    color: #1F2937;
 }
